@@ -7,7 +7,6 @@ public class MainScreen {
 
 	public static void main(String[] args) {
 		
-		//a. Nhap thong tin Student
 		Scanner input = new Scanner(System.in);
 		
 		ArrayList <Student> data = new ArrayList<>();
@@ -34,7 +33,6 @@ public class MainScreen {
 		} 
 		while (isContinue.equals("Y"));
 		
-		//b. In ra tất cả Student trong danh sách theo định dạng
 		for (int x=0; x<data.size(); x++) {
 			Student stu = data.get(x);
 			System.out.println( "Student " + (x+1) + ": \r\n"
@@ -47,7 +45,6 @@ public class MainScreen {
 					);
 		}
 		
-		//c. In ra danh sách vừa nhập (Xét finalGrade)
 		System.out.println("Xep loai hoc sinh theo Final Grade: \r\n");
 		for (int j=0; j<data.size(); j++) {
 			Student stu = data.get(j);
@@ -70,7 +67,6 @@ public class MainScreen {
 			}
 		}
 		System.out.println();
-		//d. Tính điểm tổng kết trung bình của danh sách học sinh	
 		
 		float sumGrade = 0;
 		for (int k=0; k<data.size(); k++) {

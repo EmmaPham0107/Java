@@ -6,7 +6,6 @@ public class MyMainClass {
 
 	public static void main(String[] args) {
 		
-		//Nhap tu ban phim
 		Scanner input = new Scanner(System.in);
 		System.out.print("Nhập số thứ nhất x = ");
 		CalculateUtils.x = input.nextDouble();
@@ -16,7 +15,6 @@ public class MyMainClass {
 		System.out.print("Nhập lệnh ACTION = ");
 		String action = input.nextLine();
 		
-		//In ket qua ra man hinh
 		switch (action) {
 		case "CONG":
 			System.out.print("Ket qua tinh cong = ");
