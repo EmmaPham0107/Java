@@ -33,7 +33,7 @@ public class Student {
 		return dob;
 	}
 	public void setdob(String dob) {
-		//dob (kiểu String dạng dd/mm/yyyy)
+		
 		try {
 			new SimpleDateFormat("dd/MM/yyyy").parse(dob);
 			}
